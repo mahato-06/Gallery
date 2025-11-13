@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Image Gallery</title>
+   <link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+   <div class="gallery-container">
+      <h2>📸 Image Gallery</h2>
+      <input type="file" accept="image/*" multiple onchange="uploadImages(event)">
+      <div class="gallery" id="gallery"></div>
+      <div class="controls">
+         <button onclick="prevImage()">⏮ Prev</button>
+         <button onclick="nextImage()">⏭ Next</button>
+         <button onclick="zoomImage()">🔍 Zoom</button>
+         <button onclick="deleteImage()">🗑 Delete</button>
+      </div>
+   </div>
+
+   <script src="image.js"></script>
+</body>
+
+</html>
